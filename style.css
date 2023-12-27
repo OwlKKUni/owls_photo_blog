@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Poppins&family=Roboto&display=swap');
 
-/*
-font-family: 'DM Sans', sans-serif;
-font-family: 'Poppins', sans-serif;
-*/
 
 /*ROOT*/
-/* declaring variables */
 :root{
     --light : #f8f9fa;
     --secondary: #adb5bd;
@@ -53,6 +48,102 @@ a{
     color: var(--light)
 }
 
+.container{
+    max-width: 1200px;
+    /* top-bottom left-right */
+    padding: 0 15px;
+    margin: auto;
+}
 
 
-/*SECTION*/
+
+/*SECTIONS*/
+
+/*------ Navigation Menu ------*/
+.navbar{
+    position: relative;
+    display: flex;
+    /* display items in a row */
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.nav-brand{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    align-self: center;
+    font-size: 32px;
+}
+
+.collapse{
+    align-self: center;
+}
+
+.nav-link{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin: 12px;
+    color: var(--dark);
+}
+search-box
+.nav-link:hover{
+    color: var(--primary-color);
+}
+
+.search-box{
+    display: inline;
+    border-right: 1px solid var(--secondary); /* the little line */
+    padding-right: 12px;
+    margin-right: 10px; ;
+}
+
+.toggle-button{
+    font-size: 21px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0;
+    margin: 8px 10px;
+    display: none;
+}
+
+.toggle-button:focus{
+    outline: none;
+}
+
+
+/*MEDIA QUERY */
+
+@media(max-width: 992px){
+    .navbar{
+        flex-direction: column;
+    }
+}
+
+/*(Display the burger button instead of the icons when width is smaller than 574px)*/
+@media(max-width: 574px){
+    .toggle-button{
+        display: initial;
+    }
+
+    
+    .collapse{
+        max-height: 0;
+        /* hides letter and icon buttons whne width is smaller than xyz  */
+        overflow: hidden;
+    }
+    
+    .collapse.nav-link{
+        display: block;
+        text-align: center;
+    }
+
+    .collapse.toggle{
+        max-height: 500;
+    }
+
+    .search-box{
+        border-right: none;
+    }
+}
