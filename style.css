@@ -127,23 +127,24 @@ search-box
         display: initial;
     }
 
-    
     .collapse{
         max-height: 0;
-        /* hides letter and icon buttons whne width is smaller than xyz  */
-        overflow: hidden;
+        overflow: hidden; /* hides letter and icon buttons whne width is smaller than xyz  */
+        transition: all 0.8s cubic-bezier(0.51, -0.15, 0, 0.98);
     }
-    
+        
+    /*THIS DOES NOT WORK AS INTENDED FOR SOME REASON*/
     .collapse.nav-link{
         display: block;
         text-align: center;
     }
 
     .collapse.toggle{
-        max-height: 500;
+        max-height: 500px;
     }
 
     .search-box{
         border-right: none;
-    }
+    } 
+    
 }
