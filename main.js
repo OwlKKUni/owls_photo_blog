@@ -4,3 +4,10 @@ let collapse = document.querySelectorAll("#header .collapse"); //Select both div
 toggle.addEventListener('click' , function(){
     collapse.forEach(col => col.classList.toggle("collapse-toggle"));
 })
+
+//with Masonry
+new Masonry("#posts .grid", {
+    itemSelector:'.grid-item',
+    gutter: 20
+});
+
