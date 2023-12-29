@@ -24,3 +24,5 @@ THIS DIV REFERS TO THE 3 CLASSES AT THE SAME TIME
 '#' - ID selector 
 A Class name can be used by multiple HTML elements, while an ID name must only be used by one HTML element within the page
 
+SPACES AROUND OPERATTORS - HELLA IMPORTANT DUMMY!!!!
+
