@@ -11,3 +11,14 @@ new Masonry("#posts .grid", {
     gutter: 20
 });
 
+// swiper libray initialization
+new Swiper('.swiper-container', {
+    direction : 'horizontal',
+    loop : true,
+    slidesPerView : 5,
+    autoplay : {
+        delay : 3000
+    },
+    //responsive breakpoints
+})
+

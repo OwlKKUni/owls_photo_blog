@@ -177,14 +177,28 @@ a{
 
 
 /*MEDIA QUERY */
-
+/*Display 3 columns*/
 @media (max-width : 992px){
     .navbar{
         flex-direction: column;
     }
 }
 
-/*(Display the burger button instead of the icons when width is smaller than 574px)*/
+/*Display 2 columns*/
+@media (max-width : 768px){
+    .grid .grid-item{
+        width: calc(50% - 20px); /*20 pixels for the gutter*/
+    }
+
+    .col-3{
+        flex: 0 0 100%;
+        max-width: calc(100% - 50px);
+        padding-top: 40px 50px;
+    }
+}
+
+/*Display the burger button instead of the icons when width is smaller than 574px*/
+/*Display 1 column*/
 @media(max-width: 574px){
     .toggle-button{
         display: initial;
