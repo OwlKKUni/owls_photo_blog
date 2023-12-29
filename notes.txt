@@ -1,0 +1,21 @@
+CLASS
+Classes can be reused across multiple elements, 
+making it a powerful and efficient way to apply consistent styles.
+
+Class holds variables to be used on objects
+
+
+
+BOTH OF THEM DO THE SAME THING - ITS JUST SEMANTICS
+
+DIV
+In HTML, the <div> element is a container or a division that is 
+used to group together other HTML elements and apply styles or scripts to them collectively.
+
+SECTION
+In HTML, the <section> element is a semantic HTML5 element that is used to define a section or
+a thematic grouping of content within a document. It is typically employed to represent a part
+of the document that is thematically related and can be considered as an independent unit.
+
+THIS DIV REFERS TO THE 3 CLASSES AT THE SAME TIME
+<div class="card-body text-center px-1">

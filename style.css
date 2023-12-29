@@ -27,7 +27,7 @@ a{
 }
 
 /*GLOBAL*/
-.text-light{
+.text-light{ /*Select element with class "text-light" and apply these rule to it*/
     color:var(--light)
 }
 

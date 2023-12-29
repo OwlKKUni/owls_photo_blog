@@ -1,4 +1,4 @@
-let toggle = document.querySelector("#header .toggle-button");
+let toggle = document.querySelector("#header .toggle-button"); //Select element with ID-"Header" and class of "toggle-button"
 let collapse = document.querySelectorAll("#header .collapse"); //Select both div's with "collapse" class at the same time 
 
 toggle.addEventListener('click' , function(){
