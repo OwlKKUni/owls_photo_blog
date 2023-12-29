@@ -19,3 +19,8 @@ of the document that is thematically related and can be considered as an indepen
 
 THIS DIV REFERS TO THE 3 CLASSES AT THE SAME TIME
 <div class="card-body text-center px-1">
+
+'.' - class selector
+'#' - ID selector 
+A Class name can be used by multiple HTML elements, while an ID name must only be used by one HTML element within the page
+
