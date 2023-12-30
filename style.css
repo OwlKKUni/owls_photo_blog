@@ -96,6 +96,63 @@ a{
     border-radius: 4px;
     background-color: var(--secondary-color);
 }
+
+.object-fit{
+    max-height: 120px;
+    height: 80px;
+    width: 80px;
+    object-fit: fill;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.mt-2{
+    margin-top: 10px;
+}
+
+.mt-3{
+    margin-top: 50px;
+}
+
+.mb-3{
+    margin-bottom: 30px;
+}
+
+.px-1{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.px-2{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.py-1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.py-2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.py-3{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 /* ----- .GLOBAL STYLING ----- */
 
 /* ----- NAVIGATION MENU ----- */
@@ -173,6 +230,12 @@ a{
 /* ------ FOOTER ------ */
 #footer{
     padding-top: 4em;
+}
+
+/*Well, this doesnt work for sure fix later in the tutorial */
+#footer .copyrights{
+    padding: 10px 0;
+    border-top: 2px solid var(--light);
 }
 /* ------ .FOOTER ------ */
 

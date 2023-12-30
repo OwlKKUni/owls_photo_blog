@@ -24,23 +24,25 @@ new Swiper('.swiper-container', {
     //THOSE ARE THEORETHICAL VALUES - NOT BASED ON PIXELS IN THE CODE (Thats simply how Swiper is configured)
     // ""Ratio - width/height""
     // You can set those manually with 888 instead of '@1.00'
+    // /*FOR SOME FUCKING REASON THEY HAVE TO BE IN THIS ORDER TO BE WORKING PROPERLY - JESUS FUCKING CHRIST
+    // /*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
     breakpoints:{
-        // If wievport > 0 - have 2 slides
-        '@0':{
-            slidesPerView: 2
+        // If wievport > 1066 px - have 5 slides
+        '@1.20':{
+            slidesPerView: 5
+        },
+        // If wievport > 978 px - have 4 slides
+        '@1.10':{
+            slidesPerView: 4
         },
         // If wievport > 888px - have 3 slides
         '@1.00':{
             slidesPerView: 3
         },
-        // If wievport > 1110 px - have 4 slides
-        '@1.25':{
-            slidesPerView: 4
+        // If wievport > 0 - have 2 slides
+        '@0':{
+            slidesPerView: 2
         },
-                // If wievport > 1330 px - have 5 slides
-        '@1.50':{
-            slidesPerView: 5
-        }
     }
 })
 
