@@ -26,3 +26,5 @@ A Class name can be used by multiple HTML elements, while an ID name must only b
 
 SPACES AROUND OPERATTORS - HELLA IMPORTANT DUMMY!!!!
 
+Viewport - user's visible area of a web page
+

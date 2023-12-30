@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Poppins&family=Roboto&display=swap');
 
 
-/*ROOT*/
+/* ----- ROOT ----- */
 :root{
     --light : #f8f9fa;
     --secondary: #adb5bd;
@@ -25,8 +25,9 @@ a{
 * > *{
     box-sizing: border-box;
 }
+/* ----- ROOT ----- */
 
-/*GLOBAL STYLING*/
+/* ----- GLOBAL STYLING ----- */
 .text-light{ /*Select element with class "text-light" and apply these rule to it*/
     color: var(--light);
 }
@@ -95,9 +96,9 @@ a{
     border-radius: 4px;
     background-color: var(--secondary-color);
 }
+/* ----- .GLOBAL STYLING ----- */
 
 /* ----- NAVIGATION MENU ----- */
-
 .navbar{
     position: relative;
     display: flex;
@@ -148,10 +149,9 @@ a{
 .toggle-button:focus{
     outline: none;
 }
+/* ------ .NAVIGATION MENU ------ */
 
-/* ------ Navigation Menu ------ */
-
-/* ------ Main Section ------ */
+/* ------ MAIN SECTION ------ */
 #site-main{
     margin-top: 8em; /*This means its 8 times the font size of the element*/
 }
@@ -168,23 +168,45 @@ a{
     width: calc(33.3333% - 20px);
     margin-bottom: 3em;
 }
+/* ------ .MAIN SECTION ------ */
+
+/* ------ FOOTER ------ */
+#footer{
+    padding-top: 4em;
+}
+/* ------ .FOOTER ------ */
 
 
-/* ------ .Main Section ------ */
+/* ----- MEDIA QUERY ----- */
+.row{
+    display: flex;
+}
 
-/* ------ Footer ------ */
-/* ------ .Footer ------ */
+.col-3{
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    padding-right: 35;
+}
 
+@media (max-width : 1024px){
+    .row{
+        flex-wrap: wrap;
+    }
 
-/*MEDIA QUERY */
-/*Display 3 columns*/
+    .col-3{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/*Display 3 columns if */
 @media (max-width : 992px){
     .navbar{
         flex-direction: column;
     }
 }
 
-/*Display 2 columns*/
+/*Display 2 columns if */
 @media (max-width : 768px){
     .grid .grid-item{
         width: calc(50% - 20px); /*20 pixels for the gutter*/
@@ -198,7 +220,7 @@ a{
 }
 
 /*Display the burger button instead of the icons when width is smaller than 574px*/
-/*Display 1 column*/
+/*Display 1 column if*/
 @media(max-width: 574px){
     .toggle-button{
         display: initial;
@@ -231,3 +253,4 @@ a{
         margin-top: 6em;
     }
 }
+/* ----- .MEDIA QUERY ----- */
