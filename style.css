@@ -48,6 +48,10 @@ a{
     color: var(--light);
 }
 
+.bg-dark{
+    color: var(--dark)
+}
+
 .container{
     max-width: 1200px;
     padding: 0 15px;     /* top-bottom left-right */
@@ -130,6 +134,10 @@ a{
 
 .mb-3{
     margin-bottom: 30px;
+}
+
+.m-0{
+    margin: 0;
 }
 
 .px-1{
