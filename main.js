@@ -24,7 +24,7 @@ new Swiper('.swiper-container', {
     //THOSE ARE THEORETHICAL VALUES - NOT BASED ON PIXELS IN THE CODE (Thats simply how Swiper is configured)
     // ""Ratio - width/height""
     // You can set those manually with 888 instead of '@1.00'
-    // /*FOR SOME FUCKING REASON THEY HAVE TO BE IN THIS ORDER TO BE WORKING PROPERLY - JESUS FUCKING CHRIST
+    // /*FOR SOME FUCKING REASON THEY HAVE TO BE IN THIS ORDER TO BE WORKING PROPERLY - JESUS FUCKING CHRIST */
     // /*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
     breakpoints:{
         // If wievport > 1066 px - have 5 slides
