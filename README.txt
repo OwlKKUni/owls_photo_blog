@@ -13,3 +13,11 @@ Index - main site with all the photos (maybe in future I will create a page for 
 
 Article - page for each photo with some text surounding it - rn have no idea what I want to disclose in this section
 
+TODO:
+    #0 - FINISH THE FUCKING SITE
+    #1 - Create navigation between the sites
+
+    #2 - host the website online after finished
+    #3 - create wireframe and site map
+    #4 - create presentation
+
