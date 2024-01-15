@@ -309,6 +309,15 @@ a{
     
 }
 
+.form-control{
+    width: 100%;
+    border: 2px solid var(--border);
+    padding: 1em;
+    font-size: 18px;
+    margin-right: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
 /* ------ .ARTICLE PAGE ------ */
 
 
@@ -320,7 +329,7 @@ a{
 .col-3{
     flex: 0 0 33.3333%;
     max-width: 33.3333%;
-    padding-right: 35;
+    padding-right: 35px;
 }
 
 @media (max-width : 1024px){
