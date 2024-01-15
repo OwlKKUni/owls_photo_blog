@@ -304,6 +304,10 @@ a{
     z-index: 1;
 }
 
+.post-footer .post-comments .reply{
+    padding-left: 7em;
+    
+}
 
 /* ------ .ARTICLE PAGE ------ */
 
