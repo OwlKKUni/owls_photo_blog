@@ -275,7 +275,6 @@ a{
 
 /* ------ ARTICLE PAGE ------ */
 
-
 #post{
     padding: 0, 2em;
     margin-bottom: 4em;
@@ -287,6 +286,7 @@ a{
     background-color: var(--light);
 }
 
+/* The ::after selector inserts something after the content of each selected element(s)*/
 .post-footer .post-author::after{
     background-color: white;
     content: "";
@@ -332,6 +332,17 @@ a{
     padding-right: 35px;
 }
 
+.col-4{
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+.col-8{
+    flex: 0 0 70%;
+    max-width: 70%;
+}
+
+
 @media (max-width : 1024px){
     .row{
         flex-wrap: wrap;
@@ -340,6 +351,16 @@ a{
     .col-3{
         flex: 0 0 50%;
         max-width: 50%;
+    }
+
+    .col-4{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .col-8{
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
 
