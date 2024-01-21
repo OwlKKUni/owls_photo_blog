@@ -178,6 +178,10 @@ a{
     border-radius: 99px;
 }
 
+.shadow{
+    box-shadow:rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
 /* ----- .GLOBAL STYLING ----- */
 
 /* ----- NAVIGATION MENU ----- */
@@ -336,6 +340,18 @@ a{
 }
 /* ------ .SIDEBAR ------ */
 
+/* ------ STICKY ------ */
+
+/*The z-index property specifies the stack order of an element.
+An element with greater stack order is always in front of an element
+with a lower stack order.*/
+.sticky{
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+}
+/* ------ .STICKY ------ */
 
 /* ----- MEDIA QUERY ----- */
 .row{
@@ -385,6 +401,10 @@ a{
     .navbar{
         flex-direction: column;
     }
+
+    #site-main{
+        margin-top: 14em;
+    }
 }
 
 /*Display 2 columns if */
@@ -433,5 +453,6 @@ a{
     #site-main{
         margin-top: 6em;
     }
+
 }
 /* ----- .MEDIA QUERY ----- */

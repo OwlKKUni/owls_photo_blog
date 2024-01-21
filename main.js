@@ -46,3 +46,23 @@ new Swiper('.swiper-container', {
     }
 })
 
+// Sticky navigation
+
+window.onscroll = function(){stickyFunction()}
+
+// Get current value
+let navbar = document.getElementById("header")
+
+// Get navbar position
+let sticky = navbar.offsetTop;
+
+//pageYOffset - returns the pixels a document has scrolled from the upper left corner of the window
+// DEPRECATED - alias of scrollY
+function stickyFunction(){
+    if(window.scrollY >= sticky){
+        navbar.classList.add("sticky");
+    }
+    else{
+        navbar.classList.remove("sticky")
+    }
+}
